@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Front-End Course | Mirabel</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap" rel="stylesheet">
+        
+        <script src="scriptcarrossel.js" defer></script>
+        <script src="scriptnavresponsiva.js" defer></script>
+        <script src="detectarlingua.js"></script>
+
+    </head>
+
+    <body>
+
+        <nav id="navbar">
+            
+            
+
+            <div id="navlinks">
+                <a class="bttnav" href="#">Start</a>
+                <a class="bttnav" href="#cursosinfo">Courses</a>
+                <a class="bttnav" href="#profissionaiscurso">Teachers</a>
+            </div>
+        
+            <div id="logoff">
+                <a class="bttnav right" href="#">Login</a>
+            </div>
+
+            <button id="dropmenuresponsivo"></button>
+
+        </nav>
+
+        <section class="land">
+            
+            <div class="gradientimg displaycap">
+
+                <div class="copycap"><p>Here in Mirabel, the students already graduate working in the labor market!</p></div>
+
+
+                <div class="divtotalcap">
+
+                    <p class="titulocap">Wanna be part of the best programing course in the country?</p>
+               
+                    <form class="cap">
+                        <label for="nomein">Name:</label>
+                        <input class="entrada" type="text" id="nomein" name="nomein" autocomplete="off">
+                        <label for="emailin">E-mail:</label>
+                        <input class="entrada" type="email" id="emailin" name="emailin" autocomplete="off">
+                        <label for="senhain">Password:</label>
+                        <input class="entrada" type="password" id="senhain" name="senhain" autocomplete="off">
+                        <label for="senhaconfirm">Confirm Password:</label>
+                        <input class="entrada" type="password" id="senhaconfirm" name="senhaconfirm" autocomplete="off">
+                        <input class="bttcadastro" type="submit" value="Cadastrar-se">
+                    </form>
+
+                </div>
+            
+            </div>
+
+        </section>
+
+        <main class="cttpage">
+
+                <div class="cttcenter">
+                    <h1 class="centro">Mirabel Courses</h1>
+
+                    <p>
+                    Here in Mirabel Courses, we offer quality knowledge as no one, with more than 20 years training a lot of quality professionals wich, in majority, graduate the course working to one of our partner companies. Since our creation, in 2002, we graduated 10.000 students commited with the future and ready for the labor market, in the most various areas, since Javascript until C#. We're also aways looking for the best teacher in the labor market to compose our team and guarantee to you the best study in the country!
+                    </p>
+                </div>
+
+                <h2 class="centro tituloinfobox" id="cursosinfo">Our Courses</h2>
+
+                <div class="cursosinfobox">
+
+                    <div class="cardcurso">
+                        <h2>Front-End</h2>
+                        <div class="boxcontcurso">    
+                            <ul>
+                                <li>HTML</li>
+
+                                <li>CSS</li>
+
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footercard">
+                            <p class="preço">$ 49.99</p>
+                        </div>
+
+                    </div>
+
+                    <div class="cardcurso">
+                        <h2>Back-End</h2>
+                            <div class="boxcontcurso">
+                                <ul>
+                                    <li>MySQL</li>
+
+                                    <li>PHP</li>
+
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                        <div class="footercard">
+                            <p class="preço">$ 49.99</p>
+                        </div>
+                    </div>
+
+                    <div class="cardcurso">
+                        <h2>Full-Stack</h2>
+                        <div class="boxcontcurso">
+                            <ul>
+                                <li>HTML</li>
+
+                                <li>CSS</li>
+
+                                <li>JavaScript</li>
+                                
+                                <li>MySQL</li>
+
+                                <li>PHP</li>
+
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                
+                        <div class="footercard">
+                            <p class="preçofull">$100.00</p>
+                            <p class="preço">$69.99</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="centro" id="profissionaiscurso">Our Professionals</h2>
+
+                <div class="bttcarrosselbox">
+
+                    <button id="bttcarrosselleft">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 12l-20 12 7.289-12-7.289-12z"/></svg>
+                    </button>
+
+                    <div class="carrossel">
+
+                            <ul id="displaycarrossel">
+                            
+                                <li class="infoprofes" id="card1">
+                                    <img class="imgcarrossel" src="img/Carolina.webp">
+                                    <div class="txtprofes">
+                                        <h2>Carolina</h2>
+                                        <p>Carol is our teacher of HTML, CSS e Javascript, with almost 10 years of professional experience before start graduating the best students of the market.</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="infoprofes" id="card2">
+                                    <img class="imgcarrossel" src="img/Josias.jpg">
+                                    <div class="txtprofes">
+                                        <h2>Josias</h2>
+                                        <p>Josias is our teacher of PHP, JavaScript Back-end and MySQL, with more than 20 years of previous experience, integrate our team of teachers with his large knowledge about servers and databases.</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="infoprofes" id="card3">
+                                    <img class="imgcarrossel" src="img/Marcos.webp">
+                                    <div class="txtprofes">
+                                        <h2>Marcos</h2>
+                                        <p>Marcos ir our CEO, and was our first teacher. For being Full-Stack, he thaught since Front-End until the Back-End, but leave the assignment to more talented teachers, and today act in the course direction.</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                    </div>
+                    <button id="bttcarrosselright">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 12l-20 12 7.289-12-7.289-12z"/></svg>
+                    </button>
+                </div>
+            
+        </main>
+
+        <footer class="rodape">
+
+            <div class="boxrodape">
+                <p>More Informations:</p>
+                <ul class="rodapeul">
+
+                    <li>Seilândia Ribeirinho Street, 556 - Limoeiros, São Paulo</li>
+                    <li>CNPJ: XX.XXX.XXX/XXXX-XX</li>
+                    <li>Email: Mirabelcursos@mirabel.com</li>
+                    <li>Phone Number: XXX XXX XXX</li>
+
+                </ul>
+            </div>
+            <div class="boxrodapemenor">
+                <p>Useful Links:</p>
+                <ul class="rodapeul">
+
+                    <li><a href="#">FAQs</a></li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+
+                </ul>
+            </div>
+            <div class="boxrodape">
+                <p>About:</p>
+                <ul class="rodapeul">
+                    <li>Made by: Gabriel do Nascimento</li>
+                    <li>My portfolio: <a>Working in progress</a></li>
+                    <li>This is a study project</li>
+                    <li>Used tecnologies: HTML, CSS e JavaScript</li>
+                </ul>
+
+            </div>
+
+        </footer>
+
+        
+    </body>
+
+</html>

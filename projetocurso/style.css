@@ -1,0 +1,645 @@
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter Tight', sans-serif;
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+label{
+
+    color: #FFFFFF;
+
+}
+
+#navbar{
+
+    width: 100%;
+    overflow: hidden;
+    height: 43px;
+    background-color: #1f0241;
+    display: flex;
+    column-gap: 67vw;
+
+}
+
+#navlinks{
+
+    display: flex;
+    height: 100%;
+    width: 28vw;
+
+}
+
+.bttnav, .bttnav:visited, .bttnav:active{
+
+    float: left;
+    display: block;
+    padding: 12px 0px;
+    text-align: center;
+    text-decoration: none;
+    width: 8vw;
+    color: #FFFFFF;
+
+}
+
+.bttnav:hover{
+
+    background-color: #7928EB;
+
+}
+
+#logoff{
+
+    text-align: center;
+    height: 100%;
+
+}
+
+.right{
+
+    width: 8vw;
+    padding: 12px 0px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.land{
+
+    height: 94.5vh;
+    display: flex;
+    background-image: url("img/bgland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.titulocap{
+
+    font-size:1.5em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+
+}
+
+.copycap{
+
+    font-size:3em;
+    color: #6f12f0;
+    font-weight: bold;
+    width: 400px;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    padding: 10px;
+    border-radius: 20px;
+    border: solid transparent;
+
+}
+
+.cap{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gradientimg{
+
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, #1f0241, rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8),rgba(16, 16, 16, 0.8));
+
+}
+
+.divtotalcap{
+    
+    background-color: rgba(31, 2, 65, 0.4);
+    backdrop-filter: blur(8px);
+    min-width: 400px;
+    max-width: 400px;
+    height: 380px;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 0px;
+    margin-left: 18%;
+    margin-right: 30px;
+
+}
+
+.divtotalcap:hover{
+
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+.entrada{
+
+    height: 26px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #909090;
+    transition: 0.5s;
+    padding: 0px 5px;
+
+}
+
+.entrada:focus{
+
+    transform: scale(1.05);
+    transition: 0.5s;
+    border: none;
+    outline: none;
+    padding-left: 0px 5px;
+
+}
+
+.bttcadastro{
+
+    margin: 15px auto 0px;
+    width: 90px;
+    height: 26px;
+    border: none;
+    box-shadow: none;
+    color: white;
+    background-image: linear-gradient(to bottom right, #6f12f0, #7928EB);
+    font-weight: 100;
+    
+}
+
+.bttcadastro:hover{
+
+    cursor: pointer;
+
+}
+
+
+.cttpage{
+
+    background-color: #1f0241;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 100px;
+
+}
+
+.cttcenter > p{
+
+    text-align: justify;
+
+}
+
+.displaycap{
+
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+
+}
+
+.centro{
+
+    text-align: center;
+    margin:80px 0px 40px;
+    font-weight: lighter;
+
+}
+
+.imgcarrossel{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    white-space: no-wrap;
+
+}
+
+.infoprofes{
+
+    width: 700px;
+    display: flex;
+
+}
+
+.carrossel{
+
+    overflow: hidden;
+    width: 700px;
+    height: 320px;
+    margin: auto;
+    border: solid 1px transparent;
+    border-radius: 40px;
+    background-color: #290353;
+    padding: 10px;
+
+}
+
+.carrossel > ul{
+
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 2100px;
+    height: 300px;
+
+}
+
+.txtprofes{
+
+    display: flex;
+    flex-direction: column;
+    width: 400px;  
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.txtprofes > h2{
+
+    text-align: center;
+    margin: 10px;
+
+}
+
+.txtprofes > p{
+
+    text-align: justify;
+
+}
+
+.bttcarrosselbox{
+
+    width: 780px;
+    height: 320px;
+    margin: auto;
+    display: flex;
+
+}
+
+#bttcarrosselright{
+
+    position: relative;
+    top: calc(50% - 20px);
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: #7928EB;
+    border: transparent;
+    border-radius: 10px;
+
+}
+
+#bttcarrosselright:hover{
+
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.1s;
+
+}
+
+#bttcarrosselleft:hover{
+
+    cursor: pointer;
+    transform: scale(1.1) rotateZ(180deg);
+    transition: 0.1s;
+
+}
+
+#bttcarrosselleft{
+
+    transform: rotateZ(180deg);
+    position: relative;
+    top: 50%;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: #7928EB;
+    border: transparent;
+    border-radius: 10px;
+
+}
+
+.cursosinfobox{
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+    width: 100%;
+    height: 60vh;
+    background-color: #290353;
+    align-items: center;
+
+}
+
+.cardcurso{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 350px;
+    border: solid 1px;
+    border-radius: 10px;
+
+}
+
+.cardcurso > h2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid white;
+
+}
+
+.boxcontcurso{
+
+    display: flex;
+    align-items: center;
+    height: 75%;
+
+}
+
+.footercard{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    border-top: 1px solid white;
+
+}
+
+.cttcenter{
+
+    margin: auto 20%;
+
+}
+
+.tituloinfobox{
+
+    background-color: #290353;
+    margin-bottom: 0px;
+    padding: 20px 0px 0px;
+
+}
+
+.cardcurso:hover{
+
+    background-color: #6f12f0;
+    cursor:default;
+
+}
+
+.rodape{
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #290353;
+    color: white;
+    padding: 40px 0px 0px;
+}
+
+.rodapeul{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    height: 200px;
+    text-align: justify;
+
+}
+
+.rodapeul > li{
+
+    margin: 10px 0px;
+
+}
+
+.boxrodape{
+
+    width: 30%;
+
+}
+
+.boxrodapemenor{
+
+    width: 30%;
+
+}
+
+a{
+
+    color: white;
+
+}
+
+.preço{
+
+    color: green;
+    font-size: larger;
+
+}
+
+.preçofull{
+
+    color: green;
+    font-size: 0.75em;
+    text-decoration: line-through;
+
+}
+
+.dropmenuresponsivo{
+
+    display: none;
+
+}
+
+@media screen and (max-width: 980px) {
+    
+    #navlinks, #logoff{
+
+        display: none;
+
+    }
+
+    #navbar{
+
+        background-color: #6f12f0;
+
+    }
+
+    #dropmenuresponsivo{
+
+        display: block;
+        background-image: url("img/menudrop.png");
+        width: 100%;
+        min-height: 43px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        float: right;
+        margin: auto;
+        border: none;
+        background-color: #6f12f0;
+
+    }
+
+    #navlinks.responsivo, #logoff.responsivo{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: calc(43px * 5);
+
+    }
+
+    #navlinks.responsivo > a, #logoff.responsivo > a{
+
+        width: 100%;
+        height: calc(43px);
+
+    }
+
+    div.copycap{
+
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px;
+        backdrop-filter: none;
+
+    }
+
+    .copycap > p{
+
+        padding: 10%;
+        text-align: left;
+
+    }
+
+    .displaycap{
+
+        padding: 0px;
+        backdrop-filter: blur(8px);
+
+    }
+
+    .divtotalcap{
+
+        min-width: 50%;
+        height: 100%;
+        margin: 0px;
+        border-radius: 0px;
+        justify-content: center;
+        background-color: transparent;
+        backdrop-filter: none;
+
+    }
+
+    .divtotalcap:hover{
+
+        transform: scale(1);
+
+    }
+
+    .boxrodape{
+
+        width: 30%;
+
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    
+    
+    .displaycap{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+        
+    }
+
+    div.divtotalcap, div.copycap{
+        width: 100vw;
+        padding: 0px 20px;
+        margin: 0px auto;
+    }
+
+    div.copycap{
+
+        margin: 20px;
+        height: 200px;
+
+    }
+
+    div.divtotalcap{
+
+        justify-content:start;
+
+    }
+
+    div.copycap > p{
+
+        font-size: 0.6em;
+
+    }
+
+    div.cursosinfobox{
+        
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    
+    }
+    
+    .carrossel{
+
+        width: 80vw;
+        margin: auto;
+        height: auto;
+
+    }
+    
+    #bttcarrosselright, #bttcarrosselleft{
+        display: none;
+    }
+
+    .bttcarrosselbox{
+        width: 100vw;
+    }
+
+    .infoprofes{
+
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}

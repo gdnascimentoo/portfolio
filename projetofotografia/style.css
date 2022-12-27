@@ -1,0 +1,288 @@
+h1{
+
+    margin: 0px;
+
+}
+
+
+a{
+
+    color: inherit;
+
+}
+
+
+#land{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/bgland.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: black solid 5vh;
+    border-top: black solid 5vh;
+
+}
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter Tight', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+#land h1{
+
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+    font-size: 4em;
+    text-shadow: black 0px 1px 0px, black 0px -1px 0px, black -1px 0px 0px, black 1px 0px 0px;
+
+}
+
+.button-box{
+
+    margin: 10vh auto 0 auto;
+    width: 150px;
+    height: 100px;
+
+}
+
+.button-box > a{
+
+    color: white;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0px;
+    padding: 10px 0px;
+    background-color: black;
+    border: black solid 1px;
+
+}
+
+.button-box > a:hover{
+
+    color: black;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0px;
+    padding: 10px 0px;
+    background-color: white;
+    border: black solid 1px;
+    transition: 0.5s;
+
+}
+
+#itens-land > h1{
+
+    opacity: 0;
+    animation: animacarrega 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+.button-box{
+    
+    opacity: 0;
+    animation: animacarrega 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes animacarrega {
+    
+    from{
+        transform: translate3d(-10vh, 0, 0);
+        opacity: 0;
+    }
+
+    to{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+
+}
+
+.fleximg{
+
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transition: 0.2s;
+
+}
+
+.fleximg:hover{
+
+    transform: scale(1.5);
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+main{
+
+    margin: auto;
+
+}
+
+main > h2{
+
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 2.5em;
+
+}
+
+footer{
+
+    margin-top: 4rem;
+    padding: 1rem 0;
+    background-color: black;
+    display: flex;
+
+
+}
+
+.flexport{
+
+    display: flex;
+    justify-items: end;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 10%;
+
+}
+
+.footerdiv{
+
+    margin: auto;
+    width: 25rem;
+    text-align: center;
+    color: white;
+
+}
+
+.footerdiv > ul{
+
+    list-style-type: none;
+
+}
+
+.footerdiv >ul > li:first-child{
+
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+    border: white 1px solid;
+
+}
+
+h1.center{
+
+    text-align:center;
+    margin: 20px auto;
+
+}
+
+p.center{
+
+    text-align: justify;
+    width: 50vw;
+    margin: auto;
+
+}
+
+#modal{
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+
+}
+
+.modal-content {
+    transition: 0.5s;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+
+    .fleximg:hover{
+
+        transform: scale(1);
+
+    }
+
+    .button-box > a:hover{
+
+        background-color: black;
+        color: white;
+
+    }
+    
+    .footerdiv{
+
+        width: calc(100vw - 40px);
+        margin: 20px;
+
+    }
+
+    footer{
+
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+}
