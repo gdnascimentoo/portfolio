@@ -7,36 +7,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="transição.js" defer></script>
 </head>
 <body>
 
     <main id="main-container">
         
         <section id="profissionais-container" class="spacebetween-container">
-            <a class="btt-celular-cima" href="#pessoal-container">Sobre Mim<span class="seta-cima2"><</span></a>
-            <article class="central">
-                <h1 class="titulo">Informações Profissionais</h1>
-                <h3 class="titulo">Resumo Profissional:</h3>
-                <p class="texto-profissional">Programo desde 2020, começando com uma linguagem baseada em Python para fazer apresentação de trabalhos do ensino médio. Após isso aprendi os básicos de lógica e Java em um curso do mesmo, e logo depois entrei num curso técnico de informática, o qual terminei em dezembro de 2022. Nesse curso aprendi entre outras tecnologias, HTML, CSS e JavaScript. Tecnologias essas quais decidi me aprofundar. Agora, por conta própria, continuo estudando JavaScript. Também possuo conhecimentos com PHP e MySQL.</p>
-                <h3 class="titulo">Conhecimentos:</h3>
-                <ul class="texto-profissional">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                    <li>Java</li>
-                </ul>
-            </article>
+                <a class="btt-celular-cima" href="#pessoal-container">Sobre Mim<span class="seta-cima2"><</span></a>
+                <article class="central">
+                <h1 class="titulo central texto-profissional-pc" id="titulo-profissional">Informações Profissionais</h1>
+                    <h3 class="titulo texto-profissional-pc">Resumo Profissional:</h3>
+                    <p class="texto-profissional">Programo desde 2020, começando com uma linguagem baseada em Python para fazer apresentação de trabalhos do ensino médio. Após isso aprendi os básicos de lógica e Java em um curso do mesmo, e logo depois entrei num curso técnico de informática, o qual terminei em dezembro de 2022. Nesse curso aprendi entre outras tecnologias, HTML, CSS e JavaScript. Tecnologias essas quais decidi me aprofundar. Agora, por conta própria, continuo estudando JavaScript. Também possuo conhecimentos com PHP e MySQL.</p>
+                </article>
+                <article class="central">
+                    <h3 class="titulo texto-profissional-pc">Conhecimentos:</h3>
+                    <ul class="texto-profissional">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                    </ul>
+                </article>
 
-            <article class="central">
-                <h1 class="titulo">Experiência Profissonal:</h1>
-                <p>Além de todos os projetos de estudo que fiz para treinar, já tive duas experiências como freelancer, onde usei HTML, CSS e JavaScript, além de PHP e MySQL para fazer um sistema CRUD.</p>
-            </article>
-            <a class="btt-celular" href="#portfolio-container">Portfolio<span class="seta-baixo3">></span></a>
+                <article class="central texto-profissional-pc">
+                    <h1 class="titulo">Experiência Profissonal:</h1>
+                    <p>Além de todos os projetos de estudo que fiz para treinar, já tive duas experiências como freelancer, onde usei HTML, CSS e JavaScript, além de PHP e MySQL para fazer um sistema CRUD.</p>
+                </article>
+                <a class="btt-celular" href="#portfolio-container">Portfolio<span class="seta-baixo3">></span></a>
+                <button class="btt-gerais direita" id="troca-direita2" onclick="transicionaDireita()">Voltar >></button>
         </section>
 
         <section id="menu-container">
-            <button class="btt-gerais">Informações Profissionais</button>
+            <button class="btt-gerais esquerda" onclick="transicionaEsquerda()" id="troca-esquerda">Informações Profissionais<span class="seta-esquerda"><</span></button>
 
             <div class="spacearound-container">
                 <h2 class="central titulo">GABRIEL DO NASCIMENTO</h2>
@@ -76,32 +80,34 @@
                         </defs>
                     </svg>
                 </div>
+                <button class="btt-gerais" id="baixo-pc" onclick="transicionaBaixo()">Portfolio<span class="seta-baixo">></span></button>
             </div>
 
             <a class="btt-celular" href="#pessoal-container">Sobre Mim<span class="seta-baixo">></span></a>
-            <button class="btt-gerais">Sobre Mim</button>
-            <button class="btt-gerais ">Portfolio</button>
+            <button class="btt-gerais direita" id="troca-direita" onclick="transicionaDireita()">Sobre Mim<span class="seta-direita">></span></button>
         </section>
 
         <section id="pessoal-container"  class="spacearound-container">
             <a class="btt-celular-cima" href="#">Página Inicial<span class="seta-cima"><</span></a>
             <div id="container-info-pessoal">
-                <h1 class="central titulo">Sobre Mim</h1>
-                <p class="central">Me considero alguém esforçado, auto-didata e principalmente proativo. Desde meus 7 anos sempre tive contato com computadores, o que me dá certa facilidade em aprender e masterizar novas tecnologias. Hoje, com 17, busco aprimorar mais algo em que sou apaixonado, que é a programação, afim de poder resolver problemas lógicos e agregar valor para quem escolher por me contratar.</p>
-                <h1 class="central titulo">Contato</h1>
+                <h1 class="central titulo texto-profissional-pc">Sobre Mim</h1>
+                <p class="central texto-profissional-pc">Me considero alguém esforçado, auto-didata e principalmente proativo. Desde meus 7 anos sempre tive contato com computadores, o que me dá certa facilidade em aprender e masterizar novas tecnologias. Hoje, com 17, busco aprimorar mais algo em que sou apaixonado, que é a programação, afim de poder resolver problemas lógicos e agregar valor para quem escolher por me contratar.</p>
+                <h1 class="central titulo texto-profissional-pc">Contato</h1>
                 <div id="container-contato">
                     <a href="https://wa.me/47992787912"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="48px" height="48px">    <path d="M 12.011719 2 C 6.5057187 2 2.0234844 6.478375 2.0214844 11.984375 C 2.0204844 13.744375 2.4814687 15.462563 3.3554688 16.976562 L 2 22 L 7.2324219 20.763672 C 8.6914219 21.559672 10.333859 21.977516 12.005859 21.978516 L 12.009766 21.978516 C 17.514766 21.978516 21.995047 17.499141 21.998047 11.994141 C 22.000047 9.3251406 20.962172 6.8157344 19.076172 4.9277344 C 17.190172 3.0407344 14.683719 2.001 12.011719 2 z M 12.009766 4 C 14.145766 4.001 16.153109 4.8337969 17.662109 6.3417969 C 19.171109 7.8517969 20.000047 9.8581875 19.998047 11.992188 C 19.996047 16.396187 16.413812 19.978516 12.007812 19.978516 C 10.674812 19.977516 9.3544062 19.642812 8.1914062 19.007812 L 7.5175781 18.640625 L 6.7734375 18.816406 L 4.8046875 19.28125 L 5.2851562 17.496094 L 5.5019531 16.695312 L 5.0878906 15.976562 C 4.3898906 14.768562 4.0204844 13.387375 4.0214844 11.984375 C 4.0234844 7.582375 7.6067656 4 12.009766 4 z M 8.4765625 7.375 C 8.3095625 7.375 8.0395469 7.4375 7.8105469 7.6875 C 7.5815469 7.9365 6.9355469 8.5395781 6.9355469 9.7675781 C 6.9355469 10.995578 7.8300781 12.182609 7.9550781 12.349609 C 8.0790781 12.515609 9.68175 15.115234 12.21875 16.115234 C 14.32675 16.946234 14.754891 16.782234 15.212891 16.740234 C 15.670891 16.699234 16.690438 16.137687 16.898438 15.554688 C 17.106437 14.971687 17.106922 14.470187 17.044922 14.367188 C 16.982922 14.263188 16.816406 14.201172 16.566406 14.076172 C 16.317406 13.951172 15.090328 13.348625 14.861328 13.265625 C 14.632328 13.182625 14.464828 13.140625 14.298828 13.390625 C 14.132828 13.640625 13.655766 14.201187 13.509766 14.367188 C 13.363766 14.534188 13.21875 14.556641 12.96875 14.431641 C 12.71875 14.305641 11.914938 14.041406 10.960938 13.191406 C 10.218937 12.530406 9.7182656 11.714844 9.5722656 11.464844 C 9.4272656 11.215844 9.5585938 11.079078 9.6835938 10.955078 C 9.7955938 10.843078 9.9316406 10.663578 10.056641 10.517578 C 10.180641 10.371578 10.223641 10.267562 10.306641 10.101562 C 10.389641 9.9355625 10.347156 9.7890625 10.285156 9.6640625 C 10.223156 9.5390625 9.737625 8.3065 9.515625 7.8125 C 9.328625 7.3975 9.131125 7.3878594 8.953125 7.3808594 C 8.808125 7.3748594 8.6425625 7.375 8.4765625 7.375 z" fill="#F09819"/></svg></a>
                     <a href="https://www.linkedin.com/in/gabriel-do-nascimento-5b46b4237/"><img src="img/linkedin-icon.png"></a>
                 </div>
+                <p class="email central">gabriedonascimento.2005@gmail.com</p>
             </div>
-            <p class="email central">gabriedonascimento.2005@gmail.com</p>
             
+            <button class="btt-gerais esquerda" id="troca-esquerda2" onclick="transicionaEsquerda()">< Voltar</button>
             <a class="btt-celular" href="#profissionais-container">Informações Profissionais<span class="seta-baixo2">></span></a>
         </section>
 
     </main>
 
     <footer id="portfolio-container" class="spacebetween-container">
+        <button class="btt-gerais" id="troca-cima-pc" onclick="transicionaCima()">Voltar<span class="seta-cima"><</span></button>
         <a class="btt-celular-cima" href="#profissionais-container">Informações Profissionais<span class="seta-cima3"><</span></a>
         <section class="portfolio">
                 <article class="portfolio-projeto">
@@ -152,10 +158,7 @@
                     </div>
                 </article>
         </section>
-        <section id="rodape">
-            rodape
-        </section>
     </footer>
-
+<div id="transicionador" class="transicionador-classe"></div>
 </body>
 </html>
